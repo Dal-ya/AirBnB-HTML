@@ -11,46 +11,66 @@
       }
 
       header {
-      }
-      .header_container {
-        /* margin: 10px; */
-        padding: 20px;
-        padding-top: 70px;
-
-        color: #fff;
-        text-align: center;
+        display: flex;
         border-radius: 5px;
         background: #427aa1;
+        color: #fff;
+        text-align: center;
         height: 200px;
       }
-
-      .header_main_text {
-        font-size: 1.5rem;
+      .header_container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
       }
 
-      .header_sub_text {
+      .header_main_div {
+        font-size: 1.9rem;
       }
-      .header_sub_text span {
+
+      .header_sub_div {
+        display: flex;
+        margin-top: 0.8rem;
+      }
+
+      .header_sub_div > div {
+        width: 50%;
+        text-align: left;
+        font-size: 1.1rem;
+      }
+
+      .header_sub_div_button {
+        border: 1px solid white;
+        text-align: center;
+        width: 140px;
+      }
+
+      .header_sub_div_button a {
+        text-decoration: none;
+        color: white;
+      }
+      .header_sub_div_button a:hover {
+        background-color: white;
+        color: black;
       }
     </style>
   </head>
   <body>
     <header>
       <div class="header_container">
-        <div class="header_main_text">
+        <div class="header_main_div">
           여행 예약도 여행자 호스팅도 모두 에어비앤비에서
         </div>
-        <div class="header_sub_text">
+        <div class="header_sub_div">
           <div>
             <span>다양한 숙소와 체험을 찾아보세요</span>
             <br />
-            <button>둘러보기</button>
+            <div class="header_sub_div_button"><a href="#">둘러보기</a></div>
           </div>
-
           <div>
             <span>남는 공간을 활용해 수익을 올리세요</span>
             <br />
-            <button>호스팅하기</button>
+            <div class="header_sub_div_button"><a href="#">호스팅하기</a></div>
           </div>
         </div>
       </div>
