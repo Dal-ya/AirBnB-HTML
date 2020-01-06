@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  /* border-radius: 5px; */
+  background: #427aa1;
+  color: #fff;
+  text-align: center;
+  height: 200px;
+}
+.header_container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_main_div {
+  font-size: 1.9rem;
+}
+
+.header_sub_div {
+  display: flex;
+  margin-top: 0.8rem;
+}
+
+.header_sub_div > div {
+  width: 50%;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.header_sub_div_button {
+  border: 1px solid white;
+  text-align: center;
+  width: 140px;
+}
+
+.header_sub_div_button a {
+  text-decoration: none;
+  color: white;
+}
+.header_sub_div_button a:hover {
+  background-color: white;
+  color: black;
+}
+
+.main_first_title {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+#reserve_form {
+  margin-top: 15px
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.reserve_div {
+  display: flex;
+}
+
+.reserve_div_check {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%
+}
+
+.main_review_post {
+  display: flex;
+  
+}
+
+.main_review_post > div {
+  border: 1px solid gray;
+  flex-grow: 1;
+  width: 100%
+}
+
+.guide_div {
+  display: flex;
+  border-top: 1px solid rgb(167, 162, 162);
+  border-bottom: 1px solid rgb(167, 162, 162);
+  
+}
+
+.guide_div > div {
+  /* border: 1px solid gray; */
+  flex-grow: 1;
+  text-align: left;
+  width: 100%;
+  margin: 10px;
+}
+
+.booked_house_container {
+  display: flex;
+}
+
+.booked_house_item {
+  flex-grow: 1;
+  width: 100%;
+  margin: 10px;
+}
+
+.all_view_text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.all_view_text > a{
+  text-decoration: none;
+  color: rgb(7, 181, 157);
+}
+
+#date_add_btn {
+  width: 100px;
+  height: 40px;
+  background-color: #5388ae;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}

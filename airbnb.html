@@ -5,55 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>AirBnB</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      header {
-        display: flex;
-        border-radius: 5px;
-        background: #427aa1;
-        color: #fff;
-        text-align: center;
-        height: 200px;
-      }
-      .header_container {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .header_main_div {
-        font-size: 1.9rem;
-      }
-
-      .header_sub_div {
-        display: flex;
-        margin-top: 0.8rem;
-      }
-
-      .header_sub_div > div {
-        width: 50%;
-        text-align: left;
-        font-size: 1.1rem;
-      }
-
-      .header_sub_div_button {
-        border: 1px solid white;
-        text-align: center;
-        width: 140px;
-      }
-
-      .header_sub_div_button a {
-        text-decoration: none;
-        color: white;
-      }
-      .header_sub_div_button a:hover {
-        background-color: white;
-        color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -76,109 +29,142 @@
       </div>
     </header>
     <main>
-      <div>
-        <div>독특한 숙소와 체험을 예약하세요</div>
-        <form>
-          <label for="">목적지</label>
-          <input type="text" placeholder="모든 위치" />
-          <label for="">체크인-체크아웃</label>
-          <input type="text" placeholder="모든 위치" />
-          <label for="">인원</label>
-          <input type="text" placeholder="모든 위치" />
-          <button type="submit">검색</button>
+      <div class="main_container">
+        <div class="main_first_title title">
+          독특한 숙소와 체험을 예약하세요
+        </div>
+
+        <form id="reserve_form">
+          <div class="reserve_div">
+            <div class="reserve_div_check">
+              <label for="">목적지</label>
+              <input type="text" placeholder="모든 위치" />
+            </div>
+            <div class="reserve_div_check">
+              <label for="">체크인-체크아웃</label>
+              <input type="text" placeholder="년/월/일 - 년/월/일" />
+            </div>
+            <div class="reserve_div_check">
+              <label for="">인원</label>
+              <input type="text" placeholder="게스트 1명" />
+            </div>
+            <button type="submit">검색</button>
+          </div>
         </form>
       </div>
 
-      <div>
-        <div>미국 숙소에 직접 다녀간 게스트의 후기</div>
-        <p>미국의 숙소는</p>
-        <div>
-          <img src="" alt="" />
-          <p>****</p>
-          <p>정말 최고의 숙소</p>
+      <div class="main_review">
+        <div class="main_review_title title">
+          미국 숙소에 직접 다녀간 게스트의 후기
         </div>
-
-        <div>
-          <img src="" alt="" />
-          <p>****</p>
-          <p>정말 최고의 숙소</p>
-          <img src="" alt="" />
-          <p>name</p>
-          <p>nation</p>
-        </div>
-
-        <div>
-          <img src="" alt="" />
-          <p>****</p>
-          <p>정말 최고의 숙소</p>
-          <img src="" alt="" />
-          <p>name</p>
-          <p>nation</p>
-        </div>
-
-        <div>
-          <img src="" alt="" />
-          <p>****</p>
-          <p>정말 최고의 숙소</p>
-          <img src="" alt="" />
-          <p>name</p>
-          <p>nation</p>
-        </div>
-
-        <div>
-          <div>에어비앤비와 함께하는 여행</div>
-          <hr />
-          <img src="" alt="" />
-          <hr />
-        </div>
-
-        <div>
-          <div>미국에서 방금 예약된 숙소</div>
+        <p>
+          🌟미국의 숙소는 43,000,000개 이상의 후기에서 별 5개 중 4.8개를
+          받았습니다
+        </p>
+        <div class="main_review_post">
           <div>
             <img src="" alt="" />
-            <p>집전체 조슈야트리</p>
-            <p>The jos</p>
-            <p>₩337,793</p>
-            <p><span>******</span> <span>472 </span> <span>슈퍼호스트</span></p>
+            <p>****</p>
+            <p>정말 최고의 숙소</p>
+            <img src="" alt="" />
+            <p>name</p>
+            <p>nation</p>
           </div>
 
           <div>
             <img src="" alt="" />
-            <p>집전체 조슈야트리</p>
-            <p>The jos</p>
-            <p>₩337,793</p>
-            <p><span>******</span> <span>472 </span> <span>슈퍼호스트</span></p>
+            <p>****</p>
+            <p>정말 최고의 숙소</p>
+            <img src="" alt="" />
+            <p>name</p>
+            <p>nation</p>
           </div>
 
           <div>
             <img src="" alt="" />
-            <p>집전체 조슈야트리</p>
-            <p>The jos</p>
-            <p>₩337,793</p>
-            <p><span>******</span> <span>472 </span> <span>슈퍼호스트</span></p>
-          </div>
-
-          <div>
+            <p>****</p>
+            <p>정말 최고의 숙소</p>
             <img src="" alt="" />
-            <p>집전체 조슈야트리</p>
-            <p>The jos</p>
-            <p>₩337,793</p>
-            <p><span>******</span> <span>472 </span> <span>슈퍼호스트</span></p>
-          </div>
-
-          <div>
-            <img src="" alt="" />
-            <p>집전체 조슈야트리</p>
-            <p>The jos</p>
-            <p>₩337,793</p>
-            <p><span>******</span> <span>472 </span> <span>슈퍼호스트</span></p>
+            <p>name</p>
+            <p>nation</p>
           </div>
         </div>
 
         <div>
-          <div>언제 여행하실 계획인가요?</div>
+          <div class="title">에어비앤비와 함께하는 여행</div>
+          <div class="guide_div">
+            <div>
+              <p>♡</p>
+              <p>24시간 연중무휴 지원</p>
+              <p>24시간 언제라도 에어비앤비가 도와드립니다</p>
+            </div>
+            <div>
+              <p>🏠</p>
+              <p>글로벌 호스팅 기준</p>
+              <p>게스트는 숙박 후...</p>
+            </div>
+            <div>
+              <p>★</p>
+              <p>별점 5점 호스트</p>
+              <p>깔끔하게...</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="title">미국에서 방금 예약된 숙소</div>
+          <div class="booked_house_container">
+            <div class="booked_house_item">
+              <img src="" alt="" />
+              <p>집전체 조슈야트리</p>
+              <p>The jos</p>
+              <p>₩337,793</p>
+              <p>
+                <span>******</span> <span>472 </span> <span>슈퍼호스트</span>
+              </p>
+            </div>
+
+            <div class="booked_house_item">
+              <img src="" alt="" />
+              <p>집전체 조슈야트리</p>
+              <p>The jos</p>
+              <p>₩337,793</p>
+              <p>
+                <span>******</span> <span>472 </span> <span>슈퍼호스트</span>
+              </p>
+            </div>
+
+            <div class="booked_house_item">
+              <img src="" alt="" />
+              <p>집전체 조슈야트리</p>
+              <p>The jos</p>
+              <p>₩337,793</p>
+              <p>
+                <span>******</span> <span>472 </span> <span>슈퍼호스트</span>
+              </p>
+            </div>
+
+            <div class="booked_house_item">
+              <img src="" alt="" />
+              <p>집전체 조슈야트리</p>
+              <p>The jos</p>
+              <p>₩337,793</p>
+              <p>
+                <span>******</span> <span>472 </span> <span>슈퍼호스트</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="all_view_container">
+          <p class="all_view_text">
+            <a href="#"> 모두 보기(22,000개 이상) > </a>
+          </p>
+        </div>
+
+        <div>
+          <div class="title">언제 여행하실 계획인가요?</div>
           <p>정확한 요금과 예약 가능 여부를 확인하려면 날짜를 입력하세요</p>
-          <button>날짜 추가</button>
+          <button id="date_add_btn">날짜 추가</button>
         </div>
       </div>
     </main>
